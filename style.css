@@ -1,0 +1,97 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+    --text-color: #333;
+    --border-color: #dee2e6;
+
+    --space-xs:0.5rem;
+    --space-sm:1rem;
+    --space-md:1.5rem;
+    --space-lg:2rem;
+    --space-xl:3rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-color);
+    background-color: var(--light-color);
+    margin:0;
+    padding:0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-bottom: var(--space-sm);
+    line-height:1.2;
+    color: var(--dark-color);
+}
+
+h1 {
+    font-size:2.5rem;
+}
+h2 {
+    font-size:2rem;
+}
+h3 {
+    font-size:1.75rem;
+}
+h4 {
+    font-size:1.5rem;
+}
+h5 {
+    font-size:1.25rem;
+}
+h6 {
+    font-size:1rem;
+}
+p {
+   margin-bottom: var(--space-sm);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space-sm);
+}
+
+section {
+    margin-bottom: var(--space-lg);
+    padding: var(--space-md) 0;
+}
+
+header, footer {
+    padding: var(--space-md) 0;
+    background-color: var(--dark-color);
+    color: var(--light-color );
+}
+
+main {
+    padding: var(--space-md) 0;
+}
+
+ul ,ol {
+    margin-bottom: var(--space-sm);
+    padding-left: var(--space-lg);
+}
+li {
+    margin-bottom: var(--space-xs);
+}
