@@ -458,20 +458,17 @@ nav ul li a:hover::after {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+ 
 }
 
 /* Ellipse (circle) styles */
-.play-icon:nth-child(1) {
+.Ellipse_icon {
   width: 5em;
   height: 5em;
+  left:6em;
 }
 
-/* Polygon (triangle) styles */
-.play-icon:nth-child(2) {
-  width: 30px;
-  height: 30px;
-  margin-left: 2px
-}
+
 
 /* video section end here */
 
