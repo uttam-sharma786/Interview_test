@@ -88,35 +88,115 @@
     padding: 0 var(--space-sm);
   }
   
-  /* Header Styles */
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--space-sm) var(--space-md);
-    background-color: var(--light-text);
-    flex-wrap: wrap;
-    
-  }
-  
-  nav {
-    display: flex;
-    align-items: center;
-    gap: var(--space-md);
-    flex-wrap:wrap;
-    justify-content: center;
-  }
-  
-  .logo-container img {
-    height: 20px;
-    margin-right: var(--space-sm);
-  }
-  
-  nav a {
-    color: var(--secondary-color);
-    font-weight: 500;
-  }
-  
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  position:relative;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+/* Logo Container */
+.logo-container {
+  flex: 0 0 auto;
+}
+
+.logo-container img {
+  height: 20px;
+  width: auto;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  margin-left: 11rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin-right: auto;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #043A53;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s ease;
+  padding: 0.5rem 0;
+}
+
+nav ul li a:hover {
+  color: #043A53;
+}
+
+/* Underline effect for nav links */
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #043A53;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Auth Buttons */
+.auth-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.login-btn, .signup-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-btn {
+  background-color: transparent;
+  border: 1px solid #0066cc;
+  color: #0066cc;
+}
+
+.signup-btn {
+  background-color: #0066cc;
+  border: 1px solid #0066cc;
+  color: white;
+}
+
+.login-btn:hover {
+  background-color: rgba(0, 102, 204, 0.1);
+}
+
+.signup-btn:hover {
+  background-color: #0055aa;
+}
+
+
+
+
   .auth-buttons {
     display: flex;
     gap: var(--space-md);
@@ -568,3 +648,106 @@
 
 
 /* end here responsive mobile brand section */
+
+
+/* Start Header   */
+.mobile-menu-icon {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.mobile-menu-icon span {
+  height: 3px;
+  width: 100%;
+  background-color: #0000;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 992px) {
+  nav ul li {
+    margin: 0 0.5rem;
+  }
+  
+  .login-btn, .signup-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 1rem 4%;
+  }
+  
+  .mobile-menu-icon {
+    display: flex;
+  }
+  
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    clip-path: circle(0 at 100% 0);
+    transition: clip-path 0.5s ease-in-out;
+  }
+  
+  nav.active {
+    clip-path: circle(150% at 100% 0);
+  }
+  
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    margin-right: 0;
+  }
+  
+  nav ul li {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #0000;
+  }
+  
+  .auth-buttons {
+    width: 100%;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+  
+  .logo-container img {
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    padding: 0.8rem 3%;
+  }
+  
+  .logo-container img {
+    height: 25px;
+  }
+  
+  .auth-buttons {
+    gap: 0.5rem;
+  }
+  
+  .login-btn, .signup-btn {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.8rem;
+  }
+}
