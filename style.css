@@ -258,6 +258,36 @@
     margin-right: 0.5rem;
     font-size: 0.7rem;
 }
+
+
+/* Brand Section Styles */
+
+.Brand-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.Brand-section h2 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.Brand-section div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.Brand-section img {
+  max-width: 10rem;
+  height: 1rem;
+  object-fit: cover;
+}
+
+/* end Brand section here */
+
   /* Footer */
   footer {
     background-color: var(--footer-background);
@@ -501,3 +531,40 @@
     min-width: 120px;
   }
 }
+
+
+
+/* Responsive Mobile_Brand:  */
+@media (max-width: 768px) {
+  .Brand-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+  }
+
+  .Brand-section img {
+      max-width: 120px;
+  }
+}
+
+/* Mobile View: 3 Logos in First Row, 2 in Second */
+@media (max-width: 480px) {
+  .Brand-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+  }
+
+  .Brand-container img:nth-child(4),
+  .Brand-container img:nth-child(5) {
+      grid-column: span 2;
+      justify-self: center;
+  }
+
+  .Brand-section img {
+      max-width: 100px;
+  }
+}
+
+
+/* end here responsive mobile brand section */
