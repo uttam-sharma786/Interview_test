@@ -27,7 +27,7 @@
   
   /* Body Styles */
   body {
-    font-family: sans-serif;
+    font-family: sans-serif,Lato;
     font-size: 16px;
     line-height: 1.6;
     color: var(--text-color);
@@ -131,33 +131,89 @@
   
   /* Hero Section */
   .hero {
-    padding: var(--space-xl) var(--space-md);
-    background-color: var(--light-text);
+    margin: 2rem 2rem;
+    max-width: 1800px;
+    padding: 2rem;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    padding: 2rem;
     text-align: center;
-  }
-  
-  .hero-content {
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.hero-heading {
+  display: inline;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.2;
+  color: #111;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.brand-name {
+  color: #005577; /* Deep teal color matching Trustco brand */
+  font-weight: 800;
+}
+.hero p {
+    font-size: 1.3rem;
+    color: #555;
     max-width: 800px;
-    margin: 0 auto;
-  }
-  
+    margin: 0 auto 2rem;
+    white-space: pre;
+    line-height: 1.6;
+}
+
+/* Floating Icons */
+.floating-icons {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 5rem;
+  left: 0;
+  pointer-events: none;
+}
+.icon {
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-1 {
+  top: 4rem;
+  left: 10%;
+  width: 40px;
+  height: 40px;
+}
+.icon-2 {
+  top: 4rem;
+  right: 10%;
+  width: 40px;
+  height: 40px;
+}
+
   .hero h1 {
     font-size: 2.5rem;
-    margin-bottom: var(--space-md);
-    color: var(--secondary-color);
+    margin-bottom: 1rem;
   }
   
   .hero p {
     font-size: 1.25rem;
-    margin-bottom: var(--space-lg);
-    color: var(--text-color);
+    margin-bottom: 2rem;
+
   }
-  
-  .cta-buttons {
+   .cta-buttons {
     display: flex;
     justify-content: center;
-    gap: var(--space-md);
-    margin-top: var(--space-md);
+    gap: 1rem;
+    margin-top: 2rem;
   }
   
   .primay-btn {
@@ -174,9 +230,29 @@
     color: var(--primary-color);
     padding: var(--space-xs) var(--space-md);
     font-weight: 600;
-    
-  }
-  
+  } 
+.video-btn {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    padding: 0.8rem 1.8rem;
+    border-radius: 25px;
+    font-weight: bold;
+    border-radius: 3rem;
+}
+.play-icon {
+    background-color: #0d3b66;
+    color: white;
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 3rem;
+}
   /* Footer */
   footer {
     background-color: var(--footer-background);
@@ -237,15 +313,34 @@
     header {
       flex-direction: column;
       gap: var(--space-sm);
+      padding: 1rem;
     }
     
     nav {
       flex-wrap: wrap;
       justify-content: center;
+      margin: 1rem 0;
     }
-    
+    .auth-buttons {
+      margin-top: 1rem;
+    }
+    h1{
+      font-size: 1.8rem;
+    }
+    .hero {
+      font-size: 1rem;
+    }
+    .hero-heading {
+      font-size: 2.5rem;
+    }
     .footer-content {
       flex-direction: column;
       gap: var(--space-md);
+    }
+  }
+
+  @media (max-width: 576px) {
+    .hero-heading {
+      font-size: 2rem;
     }
   }
