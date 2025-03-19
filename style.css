@@ -707,7 +707,7 @@ h3 {
 
 @media (max-width: 768px) {
   #numbers {
-    grid-template-rows: 4fr;
+    grid-template-rows: 3fr;
   }
 }
 @media (max-width: 480px) {
