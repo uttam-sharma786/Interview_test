@@ -679,6 +679,50 @@ h3 {
 
 /* Mobile Building Bridges Styles end here */
 
+/* Numbers Section Styles here */
+
+#numbers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+.number-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.number-box h2 {
+  font-size: 2rem;
+  color: #043A53;
+}
+.number-box p {
+  font-size: 1rem;
+  color:#404040;
+  ;
+}
+
+@media (max-width: 768px) {
+  #numbers {
+    grid-template-rows: 4fr;
+  }
+}
+@media (max-width: 480px) {
+  #numbers {
+    grid-template-columns: 2fr;
+  }
+}
+   
+
+/* Numbers Section Styles end here */
+
+
+
+
+
 
 @media screen and (max-width: 480px) {
   #video-section {
