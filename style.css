@@ -1158,6 +1158,168 @@ h3 {
 /* blog section end here */
 
 
+/* cta section start here */
+
+#cta-banner {
+  width: 100%;
+  padding: 4rem 2rem;
+  background-color: #141824; 
+  overflow: hidden;
+  position: relative;
+}
+
+#cta-banner .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.cta-content h2 {
+  display: inline-block;
+  flex: 1;
+  text-align: left;
+  padding-right: 2rem;
+  color: #fff;
+  overflow: hidden;
+  
+}
+.cta-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+.cta-button-banner {
+  padding: 0.75rem 1.75rem;
+  font-size: 1.125rem;
+  background-color: #f8bb2c; 
+  color: #141824; 
+  border: none;
+  border-radius: 2rem; 
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  min-width: 250px;
+}
+
+.cta-button-banner:hover {
+  background-color: #e9ad24;
+}
+
+.cta-banner-icon {
+  margin-left: 0.75rem;
+  font-size: 0.875rem;
+}
+
+/* Subtitle text */
+.cta-banner h4 {
+  margin-top: 1rem;
+  font-size: 0.9375rem;
+  color:#FFFFFF;
+  font-weight: 400;
+  
+}
+
+/* Decoration image */
+.decoration-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 50%;
+}
+
+.decoration-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+@media (min-width: 1024px) {
+  .video-content h2 {
+    font-size: 3.75rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .video-content h2 {
+    font-size: 3rem;
+  }
+  
+  .decoration-image {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  #cta-banner {
+    padding: 3rem 1.5rem;
+  }
+  
+  .video-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.75rem;
+  }
+  
+  .cta-button-banner {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    min-width: 220px;
+  }
+}
+
+
+@media (max-width: 640px) {
+  #cta-banner .container {
+    flex-direction: column; 
+  }
+  
+  .video-content {
+    text-align: center;
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+  
+  .video-content h2 {
+    font-size: 2.25rem;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .cta-banner {
+    align-items: center; 
+    margin-bottom: 2rem;
+  }
+  
+  .decoration-image {
+    max-width: 90%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  #cta-banner {
+    padding: 2.5rem 1rem;
+  }
+  
+  .video-content h2 {
+    font-size: 2rem;
+  }
+}
+
+/* cta end here */
+
+
+
 
 @media screen and (max-width: 480px) {
   #video-section {
