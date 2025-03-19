@@ -500,7 +500,8 @@ nav ul li a:hover::after {
 /* video section end  */
 
 /* Benefits Section Styles */
-/* #benefits {
+/* Benefits Section Styles */
+#benefits {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -510,7 +511,6 @@ nav ul li a:hover::after {
   padding: 20px;
   border-radius: 10px;
   max-width: 300px;
-  
 }
 
 .benefits-header {
@@ -527,8 +527,6 @@ h3 {
   font-size: 22px;
   font-weight: 700;
   margin: 15px 0;
-  
-  
 }
 
 .benefits-subtitle {
@@ -543,62 +541,143 @@ h3 {
   justify-content: center;
   align-items: center;
   max-width: 900px;
-} */
+}
+/* benefit section end here */
 
-
-
-
-
-#benefits {
+/* Building Bridges Section Styles */
+#building-bridges {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 50px 10%;
+  background-color: #f8f9fa;
 }
 
-.benefits-card-content {
+/* Layout Container */
+.building-bridges-container {
   display: flex;
-  flex-direction: row; /* Change to row for desktop */
-  gap: 30px;
-  justify-content: space-between;
   align-items: center;
-  max-width: 900px;
+  gap: 50px;
+  max-width: 1200px;
   width: 100%;
+  flex-direction: row-reverse; /* Changed: image on left, content on right */
 }
 
-.benefits-header {
-  background-color: #004aad;
-  color: #ffffff;
-  border: none;
-  padding: 8px 15px;
-  font-size: 14px;
-  border-radius: 20px;
-  cursor: pointer;
-  align-self: flex-start; /* Align to the top of the container */
-  margin-right: 20px; /* Add some spacing between header and card */
+/* Right Content (now positioned on the right) */
+.building-bridges-content {
+  flex: 1;
+  max-width: 500px;
 }
 
-.benefits-card {
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 300px;
-  flex: 1; /* Allow card to grow and fill available space */
-}
-
-h3 {
-  font-size: 22px;
+.building-bridges-content h3 {
+  font-size: 2rem;
   font-weight: 700;
-  margin: 15px 0;
+  color: #1d1d1d;
 }
 
-.benefits-subtitle {
-  font-size: 16px;
-  color: #666;
-  line-height: 1.5;
+.building-bridges-content p {
+  font-size: 1rem;
+  color: #5a5a5a;
+  line-height: 1.6;
+  margin-top: 10px;
 }
 
-/* benefit section end here */
+/* Button Styling */
+.view-report {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #0d3147;
+  color: #ffff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 20px;
+}
+
+.view-report:hover {
+  background-color: #0b2534;
+}
+
+.building-icon {
+  font-size: 1rem;
+}
+
+/* Left Image Section (now positioned on the left) */
+.building-bridges-image {
+  flex: 1;
+  text-align: left; /* Changed: align image to the left */
+}
+
+.building-bridges-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Mobile Building Bridges Styles */
+@media (max-width: 1024px) {
+  #building-bridges {
+    padding: 40px 5%;
+  }
+  .building-bridges-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .building-bridges-content {
+    max-width: 100%;
+    order: 1; /* Changed: content first in mobile view */
+  }
+  .building-bridges-image {
+    text-align: center;
+    order: 3; /* Changed: image last in mobile view */
+    margin-top: 20px;
+  }
+  .view-report {
+    display: block;
+    margin: 20px auto;
+    width: fit-content;
+    order: 2; /* Changed: button between content and image */
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits-card-content {
+    flex-direction: column;
+  }
+  .building-bridges-content h3 {
+    font-size: 1.8rem;
+  }
+  .building-bridges-content p {
+    font-size: 0.95rem;
+  }
+  .view-report {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  #building-bridges {
+    padding: 30px 5%;
+  }
+  .building-bridges-content h3 {
+    font-size: 1.5rem;
+  }
+  .building-bridges-content p {
+    font-size: 0.9rem;
+  }
+  .view-report {
+    font-size: 0.85rem;
+    padding: 6px 14px;
+  }
+}
 
 
+/* Mobile Building Bridges Styles end here */
 
 
 @media screen and (max-width: 480px) {
