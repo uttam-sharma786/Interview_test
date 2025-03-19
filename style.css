@@ -1220,6 +1220,7 @@ h3 {
 /* Subtitle text */
 .cta-banner h4 {
   margin-top: 1rem;
+  text-align: justify;
   font-size: 0.9375rem;
   color:#FFFFFF;
   font-weight: 400;
