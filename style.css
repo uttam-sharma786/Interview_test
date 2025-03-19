@@ -497,6 +497,110 @@ nav ul li a:hover::after {
   }
 }
 
+/* video section end  */
+
+/* Benefits Section Styles */
+/* #benefits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefits-card {
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+  
+}
+
+.benefits-header {
+  background-color: #004aad;
+  color: #ffff;
+  border: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 15px 0;
+  
+  
+}
+
+.benefits-subtitle {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.benefits-card-content {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+} */
+
+
+
+
+
+#benefits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefits-card-content {
+  display: flex;
+  flex-direction: row; /* Change to row for desktop */
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  width: 100%;
+}
+
+.benefits-header {
+  background-color: #004aad;
+  color: #ffffff;
+  border: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  align-self: flex-start; /* Align to the top of the container */
+  margin-right: 20px; /* Add some spacing between header and card */
+}
+
+.benefits-card {
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+  flex: 1; /* Allow card to grow and fill available space */
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+.benefits-subtitle {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* benefit section end here */
+
+
+
+
 @media screen and (max-width: 480px) {
   #video-section {
       padding: 3rem 0;
@@ -573,6 +677,8 @@ nav ul li a:hover::after {
     color: var(--light-text);
   }
   
+
+
 /* Mobile Menu Button (displays only on small screens) */
 /* Responsive adjustments */
 @media (max-width: 1024px) {
@@ -940,3 +1046,47 @@ nav ul li a:hover::after {
       font-size: 1.5rem;
   }
 }
+
+
+/*benefits section mobile section here */
+@media (max-width: 768px) {
+  #benefits {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .benefits-card-content {
+      flex-direction: column;
+  }
+
+  .benefits-card {
+      text-align: center;
+      max-width: 100%;
+  }
+
+  .benefits-card-content img {
+      width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .benefits-header {
+      font-size: 12px;
+      padding: 6px 12px;
+  }
+
+  h3 {
+      font-size: 20px;
+  }
+
+  .benefits-subtitle {
+      font-size: 14px;
+  }
+
+  .benefits-card-content img {
+      width: 100%;
+  }
+}
+
+
+/*benefits section end here */
