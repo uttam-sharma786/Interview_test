@@ -845,6 +845,151 @@ h3 {
 
 
 
+/* Testimional start here */
+
+#testimonials {
+  padding: 4rem 1rem;
+  background-color: #f8f9fa;
+}
+
+.testimonials-heading {
+  text-align: left;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #2c3e50;
+  padding: 0 1rem;
+}
+
+.testimonials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.testimonials {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonials:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.testimonials-content {
+  padding: 1.5rem;
+  position: relative;
+}
+
+.testimonials-content blockquote {
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-left: 1.5rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.testimonials-content blockquote::before {
+  content: '"';
+  font-size: 2rem;
+  color: #F0B73F;
+  ;
+  position: absolute;
+  top: -0.5rem;
+  left: -0.5rem;
+  opacity: 0.3;
+}
+
+.testimonials-avatar {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.testimonials-avatar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+  border: 2px solid #f0f0f0;
+}
+
+.testimonials h3 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #222;
+}
+
+.testimonials h4 {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  font-weight: 400;
+  margin: 0.2rem 0 0 0;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (min-width: 768px) {
+  .testimonials-heading {
+    margin-left: 2rem;
+    font-size: 2.2rem;
+  }
+  
+  .testimonials-container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 1rem;
+  }
+  
+  .testimonials-content {
+    padding: 2rem;
+  }
+  
+  .testimonials-content blockquote {
+    font-size: 1.1rem;
+  }
+  
+  .testimonials-avatar img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #testimonials {
+    padding: 5rem 2rem;
+  }
+  
+  .testimonials-heading {
+    margin-left: 3rem;
+    font-size: 2.5rem;
+  }
+  
+  .testimonials-content blockquote {
+    font-size: 1.2rem;
+  }
+  
+  .testimonials-avatar img {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .testimonials h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* testimonal end here */
+
+
+
 
 
 
@@ -1258,6 +1403,10 @@ h3 {
     font-size: 0.8rem;
   }
 }
+
+
+
+
 
 /* video mobile responsive */
 @media screen and (max-width: 992px) {
