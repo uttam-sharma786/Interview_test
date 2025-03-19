@@ -723,38 +723,66 @@ h3 {
 
 /* Founder style start here */
 
-#meet-founder{
+#meet-founder {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 10%;
-  background-color: #ffff;
+  padding: 50px 5%;
+  background-color: #fff;
 }
 
-.meet-founder-containter {
+.meet-founder-container {
   display: flex;
   align-items: center;
   gap: 50px;
-
+  max-width: 1200px;
+  width: 100%;
 }
 
 .meet-founder-content {
   flex: 2;
   max-width: 500px;
 }
+
 .meet-founder-content h3 {
   font-size: 2rem;
   font-weight: 700;
   color: #1d1d1d;
+  margin-bottom: 20px;
 }
+
 .meet-founder-content p {
   font-size: 1rem;
   color: #5a5a5a;
   line-height: 1.6;
-  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
-.Team-button {
+.founder-info {
+  margin-bottom: 20px;
+}
+
+.founder-info h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1d1d1d;
+  margin: 5px 0;
+}
+
+.meet-founder-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.meet-founder-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team-button {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -765,9 +793,53 @@ h3 {
   border: none;
   border-radius: 30px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
+.team-button:hover {
+  background-color: #185278;
+}
+
+.meet-founder-icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.team-button:hover .meet-founder-icon {
+  transform: translateX(5px);
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+  .meet-founder-container {
+      gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .meet-founder-container {
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .meet-founder-content {
+      max-width: 100%;
+  }
+  
+  .team-button {
+      margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  #meet-founder {
+      padding: 30px 20px;
+  }
+  
+  .meet-founder-content h3 {
+      font-size: 1.5rem;
+  }
+}
 
 /* Founder section end here */
 
