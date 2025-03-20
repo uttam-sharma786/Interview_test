@@ -389,12 +389,12 @@ nav ul li a:hover::after {
 
 .video-content h2 {
   flex: 1;
-  font-size: 1.5rem;
+  font-size: 1.0rem;
   color: #fff;
-  font-weight: 700;
+  font-weight: 600;
   text-align: left;
   margin: 0;
-  line-height: 1.2;
+  line-height: 1.0;
 }
 .video-content h2 .text-color {
   color: #FFD700; 
@@ -440,32 +440,33 @@ nav ul li a:hover::after {
 
 
 /* Button container for play button elements */
-.video-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
- 
-}
-
-/* Both play icon images */
-.play-icon {
+/* Container for the play button */
+.video-icon {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
- 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Ellipse (circle) styles */
+/* Circle background */
 .Ellipse_icon {
   width: 5em;
   height: 5em;
-  left:6em;
+  position: relative;
 }
 
+/* Triangle play symbol */
+.polygon_icon {
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 
 /* video section end here */
@@ -487,9 +488,10 @@ nav ul li a:hover::after {
   
   #video-section p {
       font-size: 1rem;
+      text-align: left;
   }
   
-  .play-button {
+  .video-icon {
       width: 60px;
       height: 60px;
   }
