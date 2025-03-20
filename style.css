@@ -890,11 +890,20 @@ h3 {
   padding: 0 1rem;
 }
 
+.testimonials-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 .testimonials-container {
   max-width: 1200px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  grid-template-rows: 1fr;
   gap: 1.5rem;
 }
 
@@ -974,7 +983,7 @@ h3 {
   }
   
   .testimonials-container {
-    grid-template-columns: repeat(1, 1fr);
+    flex-direction: row-reverse;
     padding: 0 1rem;
   }
   
@@ -1015,6 +1024,8 @@ h3 {
     font-size: 1.2rem;
   }
 }
+
+
 
 /* testimonal end here */
 
@@ -1115,11 +1126,8 @@ h3 {
   display: inline-block;
   margin: 0 1rem 1rem;
   padding: 0.5rem 0.75rem;
-
   color: #000;
-  
   border-radius: 4px;
- 
   font-weight: 500;
 
 }
@@ -1318,7 +1326,7 @@ h3 {
   }
   
   .video-content h2 {
-    font-size: 2.25rem;
+    font-size: 1.25rem;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
