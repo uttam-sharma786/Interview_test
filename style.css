@@ -499,7 +499,7 @@ nav ul li a:hover::after {
 
 /* video section end  */
 
-/* Benefits Section Styles */
+
 /* Benefits Section Styles */
 #benefits {
   display: flex;
@@ -507,14 +507,15 @@ nav ul li a:hover::after {
   align-items: center;
 }
 
-.benefits-card {
+.benefits-card1 {
   padding: 20px;
   border-radius: 10px;
   max-width: 300px;
 }
 
+
 .benefits-header {
-  background-color: #004aad;
+  background-color:  #043A53;
   color: #ffff;
   border: none;
   padding: 8px 15px;
@@ -531,7 +532,7 @@ h3 {
 
 .benefits-subtitle {
   font-size: 16px;
-  color: #666;
+  color: #12141D;
   line-height: 1.5;
 }
 
@@ -2308,6 +2309,8 @@ textarea {
   .benefits-header {
       font-size: 12px;
       padding: 6px 12px;
+      margin-left: 4rem;
+      
   }
 
   h3 {
