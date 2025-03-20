@@ -194,9 +194,6 @@ nav ul li a:hover::after {
   background-color: #0055aa;
 }
 
-
-
-
   .auth-buttons {
     display: flex;
     gap: var(--space-md);
@@ -322,7 +319,7 @@ nav ul li a:hover::after {
 .video-btn:hover {
   color: var(--primary-color);
 }
-.play-icon {
+.hero-play-icon {
     background-color: #0d3b66;
     color: white;
     width: 24px;
@@ -339,6 +336,7 @@ nav ul li a:hover::after {
     font-size: 0.7rem;
 }
 
+/* hero section end here */
 
 /* Brand Section Styles */
 
