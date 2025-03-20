@@ -304,45 +304,45 @@
                 </ul>
             </div>
         </div>
+
+
+
+        <div class="site-credits-container">
+            <small class="site-copyright">
+                © <span id="currentYear">2023 - 2024</span> Trustco.
+            </small>
+            
+            <ul class="site-legal-links">
+                <li><a href="#">Term of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Language</a></li>
+            </ul>
+            
+            <div class="site-language-switcher">
+                <span class="globe-icon">🌐</span>
+                <select id="language-select" aria-label="Select language">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                </select>
+            </div>
+        </div>
     </footer>
     
-        <!-- end here first part of footer-->
-
-        <!-- <footer class="site-credits">
-            <div class="site-credits-container">
-                <small class="copyright">
-                    © <span id="currentYear">2023 - 2024</span> Trustco.
-                </small>
-                
-                <ul class="legal-links">
-                    <li><a href="#">Term of Service</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Language</a></li>
-                    
-                </ul>
-                
-                <div class="language-switcher">
-                    <span class="globe-icon">🌐</span>
-                    <select id="language-select" aria-label="Select language">
-                        <option value="en">English</option>
-                        <option value="es">Español</option>
-                    </select>
-                </div>
-            </div>
-        </footer>
+    <script>
+        // Dynamically set the current year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
         
-        <script>
-            // Dynamically set the current year
-            document.getElementById('currentYear').textContent = new Date().getFullYear();
-            
-            // Language switcher functionality
-            document.getElementById('language-select').addEventListener('change', function() {
-                // Here you would typically implement the language switching logic
-                console.log('Language changed to:', this.value);
-                // Example: window.location.href = '/change-language/' + this.value;
-            });
-        </script>
-    </footer> -->
+        // Language switcher functionality
+        document.getElementById('language-select').addEventListener('change', function() {
+            // Here you would typically implement the language switching logic
+            console.log('Language changed to:', this.value);
+            // Example: window.location.href = '/change-language/' + this.value;
+        });
+    </script>
+    
+        <!-- end here footer-->
+
+      
 
 
 
