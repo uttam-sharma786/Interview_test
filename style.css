@@ -632,6 +632,10 @@ h3 {
     max-width: 100%;
     order: 1; /* Changed: content first in mobile view */
   }
+  .building-bridges-content .text-color1{
+    color:#92A7B0;
+    
+  }
   .building-bridges-image {
     text-align: center;
     order: 3; /* Changed: image last in mobile view */
@@ -660,7 +664,10 @@ h3 {
     padding: 8px 16px;
   }
 }
-
+.building-bridges-content .text-color1{
+  color:#92A7B0;
+  
+}
 @media (max-width: 480px) {
   #building-bridges {
     padding: 30px 5%;
