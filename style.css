@@ -715,12 +715,34 @@ h3 {
 
 @media (max-width: 768px) {
   #numbers {
-    grid-template-rows: 3fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media (max-width: 480px) {
   #numbers {
-    grid-template-columns: 2fr;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+      "metric1 metric2"
+      "metric3 metric4";
+  }
+  
+  .number-box:nth-child(1) {
+    grid-area: metric1;
+  }
+  
+  .number-box:nth-child(2) {
+    grid-area: metric2;
+  }
+  
+  .number-box:nth-child(3) {
+    grid-area: metric3;
+  }
+  
+  .number-box:nth-child(4) {
+    grid-area: metric4;
   }
 }
    
